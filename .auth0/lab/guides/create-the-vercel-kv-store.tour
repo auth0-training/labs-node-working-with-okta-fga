@@ -20,7 +20,7 @@
     },
     {
       "file": ".env",
-      "description": "## Add Vercel configurations to `.env`\n1. On the next screen in Vercel, select **.env.local**.\n1. Select **Show secret**.\n1. Select **Copy Snippet**\n1. Paste the contents into the highlighted line above to set the Vercel KV variables.\n1. Click [here](command:workbench.action.files.save) to save your changes to the `.env` file.",
+      "description": "## Add Vercel configurations to `.env`\n1. Once your database is created, select the **Done** button.\n1. On the next screen in Vercel, select **.env.local**.\n1. Select **Show secret**.\n1. Select **Copy Snippet**\n1. Paste the contents into the highlighted line above to set the Vercel KV variables.\n1. Click [here](command:workbench.action.files.save) to save your changes to the `.env` file.",
       "line": 28
     }
   ],
