@@ -81,7 +81,7 @@
     },
     {
       "file": ".env",
-      "description": "# Define FGA_STORE_ID\n\n1. From the FGA Dashboard, select **Settings**.\n2. Copy the value in the **Store ID** field.\n3. Paste this value to the line selected above to define the **FGA_STORE_ID** variable.",
+      "description": "# Define FGA_STORE_ID\n\n1. From the FGA Dashboard, select **Store Settings**.\n2. Copy the value in the **Store ID** field.\n3. Paste this value to the line selected above to define the **FGA_STORE_ID** variable.",
       "line": 18
     },
     {
