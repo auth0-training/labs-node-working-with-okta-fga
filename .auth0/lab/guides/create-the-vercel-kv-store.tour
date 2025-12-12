@@ -6,15 +6,15 @@
       "file": "",
       "line": 1,
       "title": "Create a Vercel KV store",
-      "description": "## Create a Vercel KV database\n\n1. Log in to [Vercel](https://vercel.com/), and visit the [Vercel Dashboard](https://vercel.com/dashboard).\n1. Select **Add New** > **Store**.\n1. Select **Upstash** and select the **Create** button next to the Upstash for Redis option. \n1. Read and accept to the Upstash Terms & Conditions to proceed to the Create Database form.\n1. Select the **Primary Region** and **Read regions** nearest to your geolocation.\n1. Select the **Free** option.\n1. Select the **Continue** button.\n1. Name this database **test-fga**.\n1. Select the **Create** button.",
+      "description": "## Create a Vercel KV database\n\n1. Log in to [Vercel](https://vercel.com/), and visit the [Vercel Dashboard](https://vercel.com/dashboard).\n1. Select **Add New** > **Store**.\n1. Select **Create Database**.\n1. Select the **Upstash** and then **Upstash for Redis**.\n1. Select the **Continue** button.\n1. If prompted, read and accept to the Upstash Terms & Conditions to proceed to the Create Database form.\n1. Select the **Primary Region** and **Read regions** nearest to your geolocation.\n1. Select the **Free** option.\n1. Select the **Continue** button.\n1. Name this database **test-fga**.\n1. Select the **Create** button.",
       "selection": {
         "start": {
-          "line": 1,
-          "character": 23
+          "line": 12,
+          "character": 25
         },
         "end": {
-          "line": 1,
-          "character": 28
+          "line": 12,
+          "character": 33
         }
       }
     },
