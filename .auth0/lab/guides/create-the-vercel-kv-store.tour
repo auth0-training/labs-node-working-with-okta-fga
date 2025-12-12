@@ -6,7 +6,7 @@
       "file": "",
       "line": 1,
       "title": "Create a Vercel KV store",
-      "description": "## Create a Vercel KV database\n\n1. Log in to [Vercel](https://vercel.com/), and visit the [Vercel Dashboard](https://vercel.com/dashboard).\n1. Select **Add New** > **Store**.\n1. Select **Upstash** and select the **Create** button next to the Upstash for Redis option. \n1. Read and accept to the Upstash Terms & Conditions to proceed to the Create Database form.\n1. Select the **Primary Region** and **Read regions** nearest to your geolocation.\n1. Select the **Free** option.\n1. Select the **Continue** button.\n1. Name this database **test-fga**.\n1. Select the **Create** button.",
+      "description": "## Create a Vercel KV database\n\n1. Log in to [Vercel](https://vercel.com/), and visit the [Vercel Dashboard](https://vercel.com/dashboard).\n1. Select **Add New** > **Store**.\n1. Select **Create Database**.\n1. Select the **Upstash** and then **Upstash for Redis**.\n1. Select the **Continue** button.\n1. If prompted, read and accept to the Upstash Terms & Conditions to proceed to the Create Database form.\n1. Select the **Primary Region** and **Read regions** nearest to your geolocation.\n1. Select the **Free** option.\n1. Select the **Continue** button.\n1. Name this database **test-fga**.\n1. Select the **Create** button.",
       "selection": {
         "start": {
           "line": 1,
@@ -20,7 +20,7 @@
     },
     {
       "file": ".env",
-      "description": "## Add Vercel configurations to `.env`\n1. On the next screen in Vercel, select **.env.local**.\n1. Select **Show secret**.\n1. Select **Copy Snippet**\n1. Paste the contents into the highlighted line above to set the Vercel KV variables.\n1. Click [here](command:workbench.action.files.save) to save your changes to the `.env` file.",
+      "description": "## Add Vercel configurations to `.env`\n1. Once your database is created, select the **Done** button.\n1. On the next screen in Vercel, select **.env.local**.\n1. Select **Show secret**.\n1. Select **Copy Snippet**\n1. Paste the contents into the highlighted line above to set the Vercel KV variables.\n1. Click [here](command:workbench.action.files.save) to save your changes to the `.env` file.",
       "line": 28
     }
   ],
