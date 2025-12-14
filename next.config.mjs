@@ -8,7 +8,7 @@ if (process.env.CODESPACE_NAME) {
 const nextConfig = {
   experimental: {
     serverActions: {
-      allowedOrigins: [appURL],
+      allowedOrigins: [appURL,  'localhost:3000'],
     },
   },
   eslint: {
