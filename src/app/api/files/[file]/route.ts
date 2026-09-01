@@ -1,5 +1,5 @@
 import "server-only";
-import { getSession } from "@auth0/nextjs-auth0";
+import { auth0 } from "@/lib/auth0";
 import { readFile } from "fs/promises";
 import mime from "mime";
 import { NextRequest, NextResponse } from "next/server";
@@ -9,12 +9,12 @@ import { fgaClient } from "@/app/authorization";
 export const dynamic = "force-dynamic";
 export const GET = async function (
   request: NextRequest,
-  { params }: { params: { file: string } },
+  { params }: { params: Promise<{ file: string }> },
 ) {
   try {
-    const session = await getSession();
+    const session = await auth0.getSession();
     const user = session?.user;
-    const fileId = params?.file;
+    const fileId = (await params)?.file;
 
     // If we're allowed to see the file, return it
     const { allowed } = await fgaClient.check({
@@ -24,7 +24,7 @@ export const GET = async function (
     })
 
     if (allowed) {
-      const { file, error } = await getFile(params?.file);
+      const { file, error } = await getFile(fileId);
 
       if (file) {
         const filePath = `${process.cwd()}/upload/${file?.fileName}`;

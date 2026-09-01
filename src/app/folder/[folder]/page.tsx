@@ -6,11 +6,16 @@ import { Error } from "@/components/error";
 import { getFiles, getFolder, getFolders } from "@/app/actions";
 
 export const dynamic = "force-dynamic";
-export default async function Page({ params }: { params: { folder: string } }) {
-  const { files, error: filesError } = await getFiles(params.folder);
-  const { folders, error: foldersError } = await getFolders(params.folder);
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ folder: string }>;
+}) {
+  const { folder } = await params;
+  const { files, error: filesError } = await getFiles(folder);
+  const { folders, error: foldersError } = await getFolders(folder);
   const { folder: currentFolder, error: currentFolderErrror } = await getFolder(
-    params.folder,
+    folder,
   );
 
   return (

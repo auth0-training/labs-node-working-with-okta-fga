@@ -1,17 +1,17 @@
-import { getSession } from "@auth0/nextjs-auth0";
+import { auth0 } from "@/lib/auth0";
 
-export async function getUserId(): Promise<string> {
-  const session = await getSession();
+export async function getUserId(): Promise<string | undefined> {
+  const session = await auth0.getSession();
 
   return session?.user?.sub;
 }
 
 export async function getUserDTO(): Promise<{
-  sub: string;
-  name: string;
-  picture: string;
+  sub: string | undefined;
+  name: string | undefined;
+  picture: string | undefined;
 }> {
-  const session = await getSession();
+  const session = await auth0.getSession();
 
   return {
     sub: session?.user?.sub,
