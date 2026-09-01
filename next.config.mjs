@@ -6,13 +6,11 @@ if (process.env.CODESPACE_NAME) {
   appURL = `https://${process.env.CODESPACE_NAME}-${PORT}.${process.env.GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}`;
 }
 const nextConfig = {
+  agentRules: false,
   experimental: {
     serverActions: {
       allowedOrigins: [appURL,  'localhost:3000'],
     },
-  },
-  eslint: {
-    // ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: true,
