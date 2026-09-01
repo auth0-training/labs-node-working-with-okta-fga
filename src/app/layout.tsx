@@ -22,7 +22,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en" className="min-h-screen">
-      <body className="min-h-screen">
+        <body className="min-h-screen" suppressHydrationWarning> 
         {children}
         <Toaster />
       </body>
